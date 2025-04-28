@@ -1,0 +1,202 @@
+@font-face {
+	font-family: 'jet_brains'; 
+	src: url(jet_brains.woff2);
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #5E453729;
+}
+.header-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.header-icon{
+    width: 60%;
+}
+.item-container{
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+	font-size: 1.5rem;
+    color: black;
+    font-family: 'jet_brains';
+    text-decoration: none; 
+}
+.item-container a{
+    color: black;
+    text-decoration: none; 
+}
+.container-main{
+    padding-top: 50px;
+    width: 100%;
+}
+.text{
+    font-family: 'jet_brains';
+    font-size: 2.5rem;
+    width: 45%;
+    height: 30%;
+    background-color: #5E453726;
+    margin: 5% 5% 0% 5%;
+    padding: 10px;
+}
+.container-main{
+    display: flex;
+}
+
+.container-gift{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+}
+.text-gift{
+    font-family: 'jet_brains';
+    font-size: 1.5rem;
+    width: 80%;
+    height: 30%;
+    background-color: #5E453726;
+    margin: 20px 20px 0% 20px;
+    padding: 10px;
+}
+.zagolovok{
+    font-size: 2rem;
+}
+.item-gift{
+    padding: 30px;
+    font-size: 1.5rem;
+}
+.container-gift-choise-text{
+    margin: 40px;
+    font-size: 1.5rem;
+    width: 50%;
+}
+.container-gift-choise-panel{
+    margin-top: 50px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Элементы в колонку */
+        text-align: center; /* Текст по центру */
+        border-bottom: 1px solid #5E453729;
+    }
+
+    .header-links {
+        flex-direction: column; /* Ссылки в колонку */
+        gap: 10px; /* Уменьшено расстояние */
+    }
+
+    .header-icon {
+        margin-bottom: 20px; /* Отступ снизу для иконки */
+    }
+
+    .amount-control {
+        flex-direction: column; /* Кнопки в колонку */
+        gap: 10px; /* Расстояние между кнопками */
+    }
+
+    .amount-control span {
+        font-size: 1.2rem; /* Уменьшен размер текста */
+    }
+}
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #5E453729;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #5E453729;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #FFFFFF;
+}
+
+form button[type="submit"] {
+    background-color: #5E4537;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #000000;
+}
+
+/* Кнопки + и - */
+.amount-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.amount-control button {
+    background-color: #5E4537;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.amount-control button:hover {
+    background-color: #000000;
+}
+
+.amount-control span {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #5E4537;
+}
+.order-button {
+    background-color: #5E4537; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем границы */
+    padding: 30px 60px; /* Поля вокруг текста */
+    font-size: 2rem; /* Размер шрифта */
+    cursor: pointer; /* Мышь показывает курсор "указатель" */
+    border-radius: 20px; /* Округленные углы */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+.order-button:hover {
+    background-color: #000000; /* Цвет при наведении */
+}
