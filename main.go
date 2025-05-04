@@ -19,7 +19,7 @@ func main() {
 	handleSubmitOrder()
 
 	log.Println("Server is running")
-	log.Fatal(http.ListenAndServe(":80", nil))
+	log.Fatal(http.ListenAndServe(":3000", nil))
 }
 
 func handleSubmitOrder() {
